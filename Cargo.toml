@@ -11,6 +11,7 @@ edition = "2018"
 
 [dependencies]
 ahash = { version = "0.7.6", optional = true, features = [] }
+serde = { version = "1.0.219", optional = true }
 
 [dev-dependencies]
 quickcheck = "1"
@@ -19,6 +20,7 @@ rand = "0.8.4"
 [features]
 default = ["std"]
 std = []
+serde = ["dep:serde"]
 
-# This feature doesn’t actually do anything. TODO: remove in v0.4.
+# This feature doesn't actually do anything. TODO: remove in v0.4.
 alloc = []
